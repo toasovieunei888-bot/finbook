@@ -96,3 +96,29 @@
 .bn .ic{display:flex;align-items:center;justify-content:center;height:24px}
 .bn .ic svg{display:block}
 .rt-catch .rt-eyebrow{margin-bottom:9px}
+/* ===== 追加⑩: ナビ押せる感UP / 準備中ハッキリ / LV強調 ===== */
+/* ① ボトムナビ：タップしたくなる */
+.bottom-nav{padding-top:8px}
+.bn{color:rgba(250,239,216,.9);font-size:10px;font-weight:800;gap:3px;border-radius:14px;padding:5px 2px;transition:transform .1s ease}
+.bn .ic{width:42px;height:42px;border-radius:13px;background:rgba(255,253,248,.13);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px rgba(255,253,248,.12)}
+.bn .ic svg{width:24px;height:24px}
+.bn:active{transform:scale(.9)}
+.bn:active .ic{background:rgba(255,253,248,.26)}
+.bn.active{color:var(--cream)}
+.bn.active .ic{background:rgba(201,160,64,.32);box-shadow:inset 0 0 0 1.5px var(--gold);filter:drop-shadow(0 0 6px rgba(201,160,64,.6))}
+.bn .ic .ti,.bn .ic{font-size:22px;color:var(--gold-soft)}
+
+/* ② 準備中カード：もっとハッキリ */
+.earn-card.soon{opacity:1}
+.earn-card.soon .earn-thumb{position:relative;filter:grayscale(.85) brightness(.82)}
+.earn-card.soon .earn-thumb::after{content:"🔒 準備中";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(35,25,20,.5);color:#fff;font-size:14px;font-weight:800;letter-spacing:.12em}
+.earn-card.soon .earn-badge{background:#6E665A!important;color:#fff!important;border-color:#6E665A!important}
+.earn-card.soon .earn-badge::after{content:"";display:none}
+.earn-card.soon .watch-pill{background:#8C8478;color:#fff;pointer-events:none;font-size:0;width:100%;text-align:center}
+.earn-card.soon .watch-pill::after{content:"近日公開";font-size:11.5px;font-weight:800}
+.earn-card.soon .ef-main{color:#8C8478}
+
+/* ③ ステップ LV 表記を太く強調 */
+.rt-lvbox{width:46px}
+.rt-lvn{font-size:11.5px;font-weight:900;color:#fff;background:#C9A040;border-radius:7px;padding:2px 6px;letter-spacing:.01em;line-height:1.25}
+.rt-lvl{font-size:12.5px;font-weight:900;color:#5C4318;margin-top:4px}
