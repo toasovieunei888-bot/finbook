@@ -85,3 +85,14 @@
 .rt-catch h3{font-size:19.5px;margin:0 0 7px;letter-spacing:.03em}
 .rt-catch p{font-size:12.5px}
 .rt-eyebrow{font-size:10.5px;margin-bottom:10px}
+/* ===== 追加⑧: ステップ階段状（案E） ===== */
+.rt-stairs{display:flex;flex-direction:column;gap:8px}
+.rt-stairs .rt-step{align-items:center}
+.rt-lvbox{display:flex;flex-direction:column;align-items:center;justify-content:center;width:40px;flex-shrink:0;border-right:1.5px dashed #E5D8BC;padding-right:9px;margin-right:3px}
+.rt-lvn{font-size:11px;font-weight:900;color:#A8761D;line-height:1.05;letter-spacing:.02em}
+.rt-lvl{font-size:11px;font-weight:800;color:#5C4A30;margin-top:2px}
+.rt-stairs .rt-nm{font-size:15px}
+/* ===== 追加⑨: ナビSVGアイコン整列 / キャッチ見出し削除後の余白 ===== */
+.bn .ic{display:flex;align-items:center;justify-content:center;height:24px}
+.bn .ic svg{display:block}
+.rt-catch .rt-eyebrow{margin-bottom:9px}
